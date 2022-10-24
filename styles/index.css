@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+
+:root {
+    --color-text: #0a0a0a;
+    --color-principal: #ffff;
+    --color-secondary: #FF6B6B;
+    --color-lineY: #FCE027;
+    --color-background: #ffff;
+    --color-footer: #FF6B6B;
+    --color-diagonal: #FF6B6B;
+    --radius-line: 30px;
+    --width-line: 40%; 
+    --height-line: 7px; 
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +35,7 @@ width: 60px;
 }
 
 .line-yellow{
-    background-color: #FCE027 !important;
+    background-color: var(--color-lineY) !important;
     height: 7px;
     border-radius: 30px;
     width: 40%;
