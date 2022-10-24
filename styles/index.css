@@ -54,3 +54,13 @@ width: 60px;
     background-color: white;
     height: 50vh;
 }
+.card_container{
+    padding-top: 20%;
+}
+.contact{
+    width: 20%;
+    box-shadow: 5px 5px black;
+}
+.card-body{
+    padding: 0 !important;
+}
