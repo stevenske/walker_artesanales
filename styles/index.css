@@ -63,7 +63,7 @@ width: 60px;
     font-weight: 700;
 }
 
-.test{
+.landing{
     padding-top: 10vh;
     background-color: white;
     height: 50vh;
@@ -78,3 +78,36 @@ width: 60px;
 .card-body{
     padding: 0 !important;
 }
+.featured{
+    right: 11% !important;
+    top: 30% !important;
+    background-color: #AF1013;
+    width: 10%;
+    box-shadow: 5px 5px black;
+    border-radius: 5px;
+}
+
+.inf{
+    background-color:  var( --color-secondary);
+}
+.w-60{
+    width: 90%;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+}
+.shadow{
+    box-shadow:   2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+textarea{
+    border: none;
+    overflow: auto;
+    resize: none;
+}
+
+.footer_container{
+    background-color: var(--color-secondary);
+}
+footer img{
+    widows: 30px;
+    height: 30px;
+}
+
