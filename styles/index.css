@@ -34,6 +34,11 @@
 width: 60px;
 }
 
+.landing{
+    padding-top: 10rem;
+    background-color: white;
+}
+
 .line-yellow{
     background-color: var(--color-lineY) !important;
     height: 7px;
@@ -63,11 +68,6 @@ width: 60px;
     font-weight: 700;
 }
 
-.landing{
-    padding-top: 10vh;
-    background-color: white;
-    height: 50vh;
-}
 .card_container{
     padding-top: 20%;
 }
@@ -80,7 +80,7 @@ width: 60px;
 }
 .featured{
     right: 11% !important;
-    top: 30% !important;
+    top: 25% !important;
     background-color: #AF1013;
     width: 10%;
     box-shadow: 5px 5px black;
