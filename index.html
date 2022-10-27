@@ -58,7 +58,7 @@
                 <p class="my-2">Contáctanos</p>
             </div>
         </div>
-        <div class="col-md-6 banner_food mt-5 d-flex">
+        <div class="col-md-6 container-fluid banner_food mt-5 d-flex">
             <img src="../assets/images/banner_food.png" alt="">
         </div>
     </div>
@@ -91,10 +91,13 @@
         </div>
     </div>
     <div class="aboutUs_container d-flex">
-        <div class="col-6">
-            <div class="fs-1 fw-bold">
+        <div class="col-md-6">
+            <div class="aboutUs_title fs-1 fw-bold">
                 <p class="mx-5 mt-5 ">Sobre</p>
                 <p class="mx-5 ">Nosotros</p>
+            </div>
+            <div class="aboutUs_line d-none justify-content-center w-100">
+                <div class="line-yellow "></div>
             </div>
             <div class="mx-5 mt-5">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum officia, non rem molestiae
@@ -114,7 +117,7 @@
                     officiis veritatis consequatur animi totam distinctio obcaecati, in praesentium pariatur vitae?</p>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
             <img class="w-100" src="./assets/images/banner_food_2.png" alt="image of food">
         </div>
     </div>
@@ -125,14 +128,13 @@
         </div>
         <div class="form_container mt-3 rounded-start rounded-end w-60 mx-5 d-flex">
             <div class="w-50 inf rounded-start">
-                <p class="fs-3 py-3 text-center">Información de contacto</p>
-                <p class="ps-5 py-5"><span class="ms-5 me-3"><img src="./assets/images/location.svg" alt=""></span>Av.
-                    123 Julio. 589</p>
+                <h3 class="fs-3 py-3 text-center">Información de contacto</h3>
+                <p class="ps-5 py-5"><span class="ms-5 me-3"><img src="./assets/images/location.svg" alt=""></span>Julio de Vedia 3760 Bo Patricios Córdoba 5000</p>
                 <p class="ps-5 py-5"><span> <img class="ms-5 me-3" src="./assets/images/email.svg"
                             alt=""></span>correo@correo.com</p>
                 <p class="ps-5 mb-0 py-5"><span> <img class="ms-5 me-3" src="./assets/images/phone.svg"
                             alt=""></span>+124234545</p>
-                <div class="pb-3 ms-5">
+                <div class=" form_networks pb-3 ms-5">
                     <a href="https://www.twitter.com" target="_blank"><img src="./assets/images/twitter.png" alt=""></a>
                     <a href="https://www.instagram.com" target="_blank"><img src="./assets/images/instagram.svg"
                             alt=""></a>
@@ -142,9 +144,9 @@
             </div>
 
             <form class="w-50 rounded-end">
-                <div>
-                    <p class="fs-3 pt-3 ms-5 mb-0">Envianos un mensaje.</p>
-                    <p class="fs-5 ms-5 mt-0">Pronto nos pondremos en contacto.</p>
+                <div class="form_title_container">
+                    <p class="form_title fs-3 pt-3 ms-5 mb-0">Envianos un mensaje.</p>
+                    <p class="form_subtitle fs-5 ms-5 mt-0">Pronto nos pondremos en contacto.</p>
                 </div>
                 <div class="form-group d-flex justify-content-center py-2">
                     <div class="col-md-10 shadow">
@@ -180,7 +182,7 @@
                     <textarea class="col-md-10 shadow pt-3 px-3 rounded" rows="10" name="message" id="message"
                         placeholder="Mensaje..."></textarea>
                 </div>
-                <div class="form-group d-flex justify-content-end mx-5 my-3">
+                <div class="form-submit d-flex justify-content-end mx-5 my-3">
                     <button class="btn btn-white border-danger mx-3" id="submit" type="submit" value="SEND">
                         <div class="alt-send-button">
                             <i class="fa fa-paper-plane"></i><span class="send-text">Enviar</span>
@@ -190,9 +192,9 @@
             </form>
         </div>
     </div>
-    <footer class="footer_container">
-        <div class="d-flex align-items-center py-5">
-            <div class="col-6 d-flex align-items-start flex-column justify-content-center ps-5 py-2">
+    <footer>
+        <div class="footer_container d-flex align-items-center py-5">
+            <div class="col-md-6 d-flex align-items-start flex-column justify-content-center ps-5 py-2">
                 <p class="mb-3"><span><img src="./assets/images/whatsapp.svg" alt="whatsapp logo"
                             class="me-4"></span>3517660002 / 3517432761</p>
                 <p class="mb-3 ms-1"><span><img src="./assets/images/location.svg" alt="location logo"
@@ -200,7 +202,7 @@
                 <p class="mb-3"><span><img src="./assets/images/email.svg" alt="email logo"
                             class="me-3">walkerartesanales.cba@gmail.com</span></p>
             </div>
-            <div class="col-6 d-flex align-items-end flex-column justify-content-center pe-5 py-2">
+            <div class="footer_networks col-md-6 d-flex align-items-end flex-column justify-content-center pe-5 py-2">
                 <a class="mb-3" href="https://www.twitter.com" target="_blank"><img src="./assets/images/twitter.png"
                         alt=""></a>
                 <a class="mb-3" href="https://www.instagram.com" target="_blank"><img

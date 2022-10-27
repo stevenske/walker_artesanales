@@ -27,7 +27,7 @@
 }
 @media all and (max-width:768px){
     .diagonal_back{
-        height: 60vh;
+        height: 100%;
     }
 }
 .navbar-brand img{
@@ -50,10 +50,12 @@ width: 60px;
     body{
         font-size: 0.7rem;
     }
-        .test{
-            display: block !important;
-            padding-top: 5vh;
-        
+    .landing{
+        display: block !important;
+    }
+    .test{
+        display: block !important;
+        padding-top: 5vh;        
     }
     .banner_food{
         display: flex;
@@ -61,6 +63,16 @@ width: 60px;
     }
     .banner_food img{
         width: 90%;;
+    }
+    .contact{
+        width: 50% !important;
+    }
+    .card_container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        margin: 1rem 0 1rem 0;
     }
 }
 
@@ -86,7 +98,66 @@ width: 60px;
     box-shadow: 5px 5px black;
     border-radius: 5px;
 }
-
+@media all and (max-width:768px){
+    .featured{
+        width: 50%;
+        top: 0% !important;
+        right: 0% !important;
+        margin-left: 0rem !important;
+        margin-right: 2.7rem !important;
+    }
+    .aboutUs_container{
+        display: inline !important;
+    }
+    .aboutUs_title{
+        display: flex;
+        justify-content: center;
+    }
+    .aboutUs_title p{
+        margin: 1rem 0.5rem 0rem 0rem !important;
+    }
+    .aboutUs_line{
+        display: flex !important;
+    }
+    .aboutUs_line .line-yellow{
+        width: 80%;
+    }
+    .form_container{
+        width: 100% !important;
+        flex-direction:column ;
+        align-items: center;
+        margin: 0rem 0rem 0rem 0rem !important;
+        border-radius: 25px 25px 0px 0px !important;
+    }
+    .inf{
+        border-radius: 25px 25px 0px 0px !important;
+        width: 100% !important;
+    }
+    .inf p{
+        padding: 2rem 0rem 4rem 0rem !important;
+    }
+    .form_networks{
+        display: none;
+    }
+    .w-50{
+        width: 100% !important;
+    }
+    .form_subtitle {
+        margin: 0rem 0rem 0rem 0.5rem !important;
+    }
+    .form-submit{
+    justify-content: center !important;
+    }
+    .footer_container{
+        justify-content: center !important;
+        display: block !important;
+    }
+    .footer_networks{
+        padding: 0rem 3rem 0rem 8rem !important;
+        display: block !important;
+        flex-direction: row !important;
+    }
+}
 .inf{
     background-color:  var( --color-secondary);
 }
@@ -103,7 +174,7 @@ textarea{
     resize: none;
 }
 
-.footer_container{
+footer{
     background-color: var(--color-secondary);
 }
 footer img{
