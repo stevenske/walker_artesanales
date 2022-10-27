@@ -13,7 +13,9 @@
     --width-line: 40%; 
     --height-line: 7px; 
 }
-
+html{
+    scroll-behavior: smooth !important;
+}
 *{
     margin: 0;
     padding: 0;
@@ -81,6 +83,10 @@ width: 60px;
     font-weight: 700;
 }
 
+.nav-item a:hover {
+    color: #AF1013 !important;
+    border-color: #000;
+}
 .card_container{
     padding-top: 20%;
 }
@@ -182,4 +188,20 @@ footer img{
     widows: 30px;
     height: 30px;
 }
-
+.zoom {
+    transition: 300ms;
+}
+.zoom:hover {
+    transform: scale(1.1);
+    border-color: #000;
+}
+.fixed-end{
+    position: fixed;
+    top: 50%;
+    bottom: 0x;
+    right: 1%;
+    z-index: 1000;;
+}
+.smooth_scroll img{
+    width: 100px;
+}
