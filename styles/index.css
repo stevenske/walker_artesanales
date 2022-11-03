@@ -94,16 +94,40 @@ width: 60px;
     width: 20%;
     box-shadow: 5px 5px black;
 }
+.contact a{
+    text-decoration: none;
+    color: #AF1013;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+.contact:hover{
+    transition: 300ms;
+    background-color:  #AF1013;
+}
+.contact a:hover{
+    transition: 300ms;
+    color: #fff !important;
+}
+
 .card-body{
     padding: 0 !important;
 }
 .featured{
     right: 11% !important;
     top: 25% !important;
-    background-color: #AF1013;
     width: 10%;
+    background-color: #fff;
     box-shadow: 5px 5px black;
-    border-radius: 5px;
+    border: solid #AF1013 1px;
+}
+
+.featured a{
+    text-decoration: none;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    color: #AF1013;
 }
 @media all and (max-width:768px){
     .featured{
