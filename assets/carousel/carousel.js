@@ -33,7 +33,7 @@ class Carousel {
             galleryControlsContainer.appendChild(
                 document.createElement("button")
             ).className = `gallery-controls-${control}`;
-            document.querySelector(`.gallery-controls-${control}`).innerHTML = `<img src='./assets/images/${control}-arrow.png'></img>`;
+            document.querySelector(`.gallery-controls-${control}`).innerHTML = `<div></div>`;
         });
     }
     useControls() {

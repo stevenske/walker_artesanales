@@ -101,12 +101,10 @@ width: 60px;
     height: 100% !important;
     display: block;
 }
-.contact:hover{
-    transition: 300ms;
+.contact:active{
     background-color:  #AF1013;
 }
-.contact a:hover{
-    transition: 300ms;
+.contact a:active{
     color: #fff !important;
 }
 
@@ -192,9 +190,12 @@ width: 60px;
 .inf{
     background-color:  var( --color-secondary);
 }
-.w-60{
-    width: 90%;
+.w-80{
+    width: 80%;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+}
+.ml-9{
+    margin-left: 12rem;
 }
 .shadow{
     box-shadow:   2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -219,13 +220,29 @@ footer img{
     transform: scale(1.1);
     border-color: #000;
 }
-.fixed-end{
+.smooth_scroll a{
     position: fixed;
+    background-image: url(/assets/images/fix-top.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     top: 50%;
-    bottom: 0x;
     right: 1%;
-    z-index: 1000;;
-}
-.smooth_scroll img{
     width: 100px;
+    height: 100px;
+    transition: 200ms;
+}
+
+.smooth_scroll a:active{
+    background-image: url(/assets/images/fix-top-variant.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.smooth_scroll a:hover{
+    background-image: url(/assets/images/fix-top-variant.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -0.5rem;
 }
