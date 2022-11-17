@@ -9,6 +9,8 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/carousel.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('2tMB3K1WcGY8TGhcN')</script>
     <title>Home</title>
 </head>
 
@@ -36,7 +38,8 @@
                             <a class="nav-link active mx-5" aria-current="page" href="#">Preguntas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active mx-5" aria-current="page" href="./pages/contacto/contacto.html">Contacto</a>
+                            <a class="nav-link active mx-5" aria-current="page"
+                                href="./pages/contacto/contacto.html">Contacto</a>
                         </li>
 
                     </ul>
@@ -62,9 +65,12 @@
         </div>
         <div class="gallery col-md-6 container-fluid">
             <div class="gallery-container">
-                <img class="rounded gallery-item gallery-item-1" src="./assets/images/product_1.png" alt="" data-index="1">
-                <img class="rounded gallery-item gallery-item-2" src="./assets/images/product_2.png" alt="" data-index="3">
-                <img class="rounded gallery-item gallery-item-3" src="./assets/images/product_3.png" alt="" data-index="2">
+                <img class="rounded gallery-item gallery-item-1" src="./assets/images/product_1.png" alt=""
+                    data-index="1">
+                <img class="rounded gallery-item gallery-item-2" src="./assets/images/product_2.png" alt=""
+                    data-index="3">
+                <img class="rounded gallery-item gallery-item-3" src="./assets/images/product_3.png" alt=""
+                    data-index="2">
             </div>
             <div class="gallery-controls"></div>
         </div>
@@ -142,33 +148,34 @@
                             alt=""></span>walkerartesanales.cba@gmail.com</p>
                 <p class="ps-5 mb-0 py-5"><span> <img class="ms-5 me-3" src="./assets/images/phone.svg"
                             alt=""></span>3517660002 / 3517432761</p>
-                            <div class="form_networks d-flex ms-5 pt-5 mt-5">
-                                <a class="mx-1 my-auto zoom" href="https://www.twitter.com" target="_blank"><img src="../../assets/images/twitter.png" alt=""></a>
-                                <a class="mx-1 my-auto zoom" href="https://www.instagram.com" target="_blank"><img src="../../assets/images/instagram.svg" alt=""></a>
-                                <a class="mx-1 my-auto zoom" href="https://www.facebook.com" target="_blank"><img src="../../assets/images/facebook.svg" alt=""></a>
-                            </div>
+                <div class="form_networks d-flex ms-5 pt-5 mt-5">
+                    <a class="mx-1 my-auto zoom" href="https://www.twitter.com" target="_blank"><img
+                            src="../../assets/images/twitter.png" alt=""></a>
+                    <a class="mx-1 my-auto zoom" href="https://www.instagram.com" target="_blank"><img
+                            src="../../assets/images/instagram.svg" alt=""></a>
+                    <a class="mx-1 my-auto zoom" href="https://www.facebook.com" target="_blank"><img
+                            src="../../assets/images/facebook.svg" alt=""></a>
+                </div>
             </div>
 
-            <form class="w-50 rounded-end">
+            <form class="w-50 rounded-end" id="form">
                 <div class="form_title_container">
                     <p class="form_title fs-3 pt-3 ms-5 mb-0">Envianos un mensaje.</p>
                     <p class="form_subtitle fs-5 ms-5 mt-0">Pronto nos pondremos en contacto.</p>
                 </div>
                 <div class="form-group d-flex justify-content-center py-2">
                     <div class="col-md-10 shadow">
-                        <input type="text" class="form-control" id="name" placeholder="Nombre" name="name" value=""
-                            required>
+                        <input class="form-control" placeholder="Nombre" type="text" name="from_name" id="from_name" required>
                     </div>
                 </div>
                 <div class="form-group d-flex justify-content-center py-2">
                     <div class="col-md-10 shadow">
-                        <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" value=""
-                            required>
+                        <input  class="form-control"  placeholder="E-mail" type="text" name="email_id" id="email_id" required>
                     </div>
                 </div>
                 <div class="form-group d-flex justify-content-center py-2">
                     <div class="col-md-10 shadow">
-                        <input type="tel" class="form-control" id="phone" placeholder="Telefono" name="phone" value=""
+                        <input class="form-control" placeholder="Telefono" type="text" name="phone" id="phone"
                             required>
                     </div>
                 </div>
@@ -176,7 +183,7 @@
                     <div class="col-md-10 position-relative shadow">
                         <span class="position-absolute end-0 me-4 my-2"><img src="./assets/images/dropdown.png"
                                 alt=""></span>
-                        <select class="form-control text-muted" id="email">
+                        <select class="form-control text-muted"  type="text" name="motive" id="motive">
                             <option>Seleccionar un motivo</option>
                             <option>Compra Mayorista</option>
                             <option>Compra Minorista</option>
@@ -185,11 +192,11 @@
                     </div>
                 </div>
                 <div class="form-group d-flex justify-content-center py-2">
-                    <textarea class="col-md-10 shadow pt-3 px-3 rounded" rows="10" name="message" id="message"
+                    <textarea class="col-md-10 shadow pt-3 px-3 rounded" rows="10" type="text" name="message" id="message"
                         placeholder="Mensaje..."></textarea>
                 </div>
                 <div class="form-submit d-flex justify-content-end mx-5 my-3">
-                    <button class="btn btn-white border-danger mx-3" id="submit" type="submit" value="SEND">
+                    <button class="btn btn-white border-danger mx-3" id="button" value="Send Email" type="submit">
                         <div class="alt-send-button">
                             <i class="fa fa-paper-plane"></i><span class="send-text">Enviar</span>
                         </div>
@@ -225,7 +232,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <script src="./style.js"></script>
+    <script src="../app.js"></script>
 </body>
-
 </html>
+
+
