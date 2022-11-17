@@ -53,11 +53,32 @@ width: 60px;
         font-size: 0.7rem;
     }
     .landing{
-        display: block !important;
+        display:flex !important;
+        flex-direction: column-reverse;
+        padding-top: 6rem;
     }
     .test{
         display: block !important;
         padding-top: 5vh;        
+    }
+    .inf{
+        padding-bottom: 4rem;
+    }
+    .inf p{
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .inf span img{
+        width: 7%;
+    }
+    .contactUs_titleContainer{
+        margin: 0 0 0 0 !important;
+        text-align: center;
+    }
+    .form_networks{
+        display: none !important;
     }
     .banner_food{
         display: flex;
@@ -142,17 +163,21 @@ width: 60px;
         border-radius: 25px 25px 0px 0px !important;
         width: 100% !important;
     }
-    .inf p{
-        padding: 2rem 0rem 4rem 0rem !important;
-    }
-    .form_networks{
-        display: none;
-    }
     .w-50{
         width: 100% !important;
     }
     .form_subtitle {
         margin: 0rem 0rem 0rem 0.5rem !important;
+    }
+    .form-control{
+        width: 90vw;
+    }
+    textarea{
+        width: 90%;
+        height: 300px;
+    }
+    .smooth_scroll{
+        display: none;
     }
     .form-submit{
     justify-content: center !important;
@@ -187,6 +212,7 @@ textarea{
 }
 .form-submit button{
     transition: 300ms;
+    color: #AF1013;
 }
 .form-submit button:hover{
  background-color: #AF1013;
