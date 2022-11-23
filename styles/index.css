@@ -130,19 +130,34 @@ width: 60px;
 .contact a:hover{
     color: #fff !important;
 }
+.toProducts{
+    background-color: var(--color-background);
+    box-shadow: 5px 5px black;
+    transition: 200ms;
+    right: 10%;
+    bottom: -5%;
+    z-index: 10000;
+}
+.toProducts a{
+    text-decoration: none;
+    color: #AF1013;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    transition: 300ms;
+}
+.toProducts:hover{
+    background-color:  #AF1013;
+}
+.toProducts a:hover{
+    color: #fff !important;
+}
+
 
 .card-body{
     padding: 0 !important;
 }
-.aboutUs_text_container p{
-    flex-wrap: wrap;
-    width: 300px;
-}
-.aboutUs_banner_container img{
-    background-size: cover;
-    height: 100%;
-    width: 50%;
-}
+
 @media all and (max-width:768px){
     .aboutUs_container{
         display: inline !important;
