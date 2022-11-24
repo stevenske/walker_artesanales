@@ -22,11 +22,6 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 
-.diagonal_back{
-    width: 100%;
-    height: 120vh;
-    background-image: linear-gradient(to bottom right, #fff 50%,#FF6B6B 50%);
-}
 @media all and (max-width:768px){
     .diagonal_back{
         height: 100%;
@@ -35,6 +30,15 @@ html{
 }
 .navbar-brand img{
 width: 60px;
+}
+.nav-item a:hover {
+    color: #AF1013 !important;
+    border-color: #000;
+}
+.diagonal_back{
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(to bottom right, #fff 50%,#FF6B6B 50%);
 }
 .line-yellow{
     background-color: var(--color-lineY) !important;
