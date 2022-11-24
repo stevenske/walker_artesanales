@@ -52,6 +52,12 @@ width: 60px;
     body{
         font-size: 0.7rem;
     }
+    .navbar{
+        background-color: rgb(33 37 41) !important;
+    }
+    .nav-item a{
+        color: #fff !important;
+    }
     .landing{
         display:flex !important;
         flex-direction: column-reverse;
@@ -88,7 +94,7 @@ width: 60px;
         width: 90%;;
     }
     .contact{
-        width: 50% !important;
+        display: none;
     }
     .card_container{
         align-items: center;
@@ -176,9 +182,18 @@ width: 60px;
         width: 80%;
         margin-left: 0rem !important;
     }
+    .toProducts{
+        right: 15%;
+        bottom: 2%;
+        z-index: 10000;
+    }
     .aboutUs_banner_container{
         display: flex !important;
         justify-content: center !important;
+    }
+    .aboutUs_banner_container img{
+        width: 100%;
+        background-size: cover;
     }
     .form_container{
         width: 100% !important;
@@ -215,9 +230,13 @@ width: 60px;
         display: block !important;
     }
     .footer_networks{
-        padding: 0rem 3rem 0rem 8rem !important;
-        display: block !important;
+        display: flex;
         flex-direction: row !important;
+    }
+    .footer_networks a{
+        padding-top: 0rem !important;
+        padding-bottom:0rem !important;
+        padding-left: 2rem;
     }
 }
 .inf{
@@ -243,8 +262,8 @@ textarea{
     color: #AF1013;
 }
 .form-submit button:hover{
- background-color: #AF1013;
- color: white;
+background-color: #AF1013;
+color: white;
 }
 footer{
     background-color: var(--color-secondary);
