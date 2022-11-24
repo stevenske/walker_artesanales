@@ -137,7 +137,7 @@ html{
     transition: 200ms;
     right: 10%;
     bottom: -5%;
-    z-index: 10000;
+    z-index: 100;
 }
 .toProducts a{
     text-decoration: none;
@@ -276,7 +276,6 @@ footer img{
 }
 .smooth_scroll{
     position: fixed;
-    position: relative;
     top: 50%;
     left: 90%;
     display: inline-block;
