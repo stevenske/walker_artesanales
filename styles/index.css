@@ -161,6 +161,10 @@ html{
 }
 
 @media all and (max-width:768px){
+    .aboutUs_text_container p {
+        font-size: 1rem !important;
+    }
+    
     .aboutUs_container{
         display: inline !important;
     }
