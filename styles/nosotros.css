@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --color-text: #0a0a0a;
+  --color-principal: #ffff;
+  --color-secondary: #ff6b6b;
+  --color-lineY: #fce027;
+  --color-background: #ffff;
+  --color-footer: #ff6b6b;
+  --color-diagonal: #ff6b6b;
+  --color-rojo: #af1013;
+  --color-naranja: #ff8025;
+  --radius-line: 30px;
+  --width-line: 40%;
+  --height-line: 7px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand img {
+  width: 60px;
+}
+
+.active {
+  color: var(--color-rojo) !important;
+}
+
+/********************** Titulo **********************/
+.titulo {
+  margin-top: 120px;
+  padding: 10px;
+  text-align: center;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffff;
+  background-image: linear-gradient(270deg, #b82715 0%, #d9473d 50%, #ff6b6b 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: #fff;
+}
+
+/********************** Footer **********************/
+.footer_container {
+  background-color: var(--color-secondary);
+}
+
+.pDerechos {
+  color: #f2e5e5;
+}
+
+footer img {
+  widows: 30px;
+  height: 30px;
+}
+
+/********************** Nosotros **********************/
+.nosotros {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.descripcion {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.descripcion h2 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.linea {
+  background-color: var(--color-rojo);
+  height: 7px;
+  border-radius: 30px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.descripcion p {
+  padding-top: 30px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.imagen img {
+  width: 600px;
+}
+
+/********************** Expansion **********************/
+.expansion {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.imagenExpand img {
+  width: 600px;
+}
+
+.descExpand {
+  width: 50%;
+  padding-left: 40px;
+}
+
+.descExpand h2 {
+  text-align: center;
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.lineaExpand {
+  margin: 0 auto;
+  background-color: var(--color-lineY);
+  height: 7px;
+  border-radius: 30px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.expansion p {
+  padding-top: 30px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/********************** Mision - Vision **********************/
+.mv {
+  height: 600px;
+  background-image: url('../assets/images/fondo-&.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mv-desc {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.mision {
+  width: 40%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-left: 0;
+}
+
+.tituloMision {
+  text-align: center;
+  font-weight: 700;
+  font-size: 58px;
+}
+
+.mision p {
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.vision {
+  width: 40%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-right: 0;
+}
+
+.tituloVision {
+  text-align: center;
+  font-weight: 700;
+  font-size: 58px;
+}
+
+.vision p {
+  line-height: 40px;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+/********************** Nuestros Valores **********************/
+.nuestrosValores {
+  height: 700px;
+  width: 100%;
+  background-image: url('../assets/images/curva.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tituloValores {
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 58px;
+}
+
+.valores {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.valoresDesc {
+  width: 40%;
+  padding: 30px;
+}
+
+.valoresDesc h3 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.valoresDesc p {
+  line-height: 40px;
+  font-size: 15px;
+}
+
+.tituloIn {
+  color: var(--color-secondary);
+}
+
+.line1 {
+  background-color: var(--color-secondary);
+  height: 7px;
+  border-radius: 30px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.tituloCal {
+  color: var(--color-lineY);
+}
+
+.line2 {
+  background-color: var(--color-lineY);
+  height: 7px;
+  border-radius: 30px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.tituloCompro {
+  color: var(--color-naranja);
+}
+
+.line3 {
+  background-color: var(--color-naranja);
+  height: 7px;
+  border-radius: 30px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.tituloCompa {
+  color: var(--color-rojo);
+}
+
+.line4 {
+  background-color: var(--color-rojo);
+  height: 7px;
+  border-radius: 30px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+/********************* Media Query *********************/
+@media screen and (max-width: 1399px) {
+  .titulo h1 {
+    font-size: 50px;
+  }
+
+  /********** Nosotros **********/
+  .descripcion {
+    padding-right: 20px;
+  }
+
+  .descripcion h2 {
+    font-size: 50px;
+  }
+
+  .descripcion p {
+    padding-right: 20px;
+  }
+
+  .imagen img {
+    width: 500px;
+  }
+
+  /********** Expansion **********/
+  .imagenExpand img {
+    width: 500px;
+  }
+
+  .descExpand {
+    padding-left: 20px;
+  }
+
+  .descExpand p {
+    padding-left: 20px;
+  }
+
+  .descExpand h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .titulo h1 {
+    font-size: 40px;
+  }
+
+  /********** Nosotros **********/
+  .descripcion h2 {
+    font-size: 40px;
+  }
+
+  .descripcion p {
+    padding: 5px;
+  }
+
+  /********** Expansion **********/
+  .descExpand p {
+    padding: 5px;
+  }
+
+  .descExpand h2 {
+    font-size: 40px;
+  }
+
+  .imagenExpand img {
+    width: 440px;
+  }
+
+  /********* Mision - Vision *********/
+  .tituloMision {
+    font-size: 40px;
+  }
+
+  .tituloVision {
+    font-size: 40px;
+  }
+
+  .mision p {
+    font-size: 17px;
+  }
+
+  .vision p {
+    font-size: 17px;
+  }
+
+  /********* Nuestros Valores *********/
+  .tituloValores {
+    font-size: 40px;
+  }
+
+  .valores {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nosotros {
+    flex-wrap: wrap;
+  }
+
+  .descripcion {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .descripcion h2 {
+    text-align: center;
+  }
+
+  .linea {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .descripcion p {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .imagen img {
+    width: 100%;
+  }
+
+  .expansion {
+    flex-wrap: wrap-reverse;
+  }
+
+  .imagenExpand img {
+    width: 100%;
+  }
+
+  .descExpand {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .descExpand h2 {
+    text-align: center;
+  }
+
+  .lineaExpand {
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .descExpand p {
+    width: 100%;
+    text-align: justify;
+  }
+
+  /********* Mision - Vision *********/
+  .mv {
+    height: 800px;
+  }
+
+  .mv-desc {
+    flex-direction: column-reverse;
+  }
+
+  .mision,
+  .vision {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mision {
+    margin-top: 280px;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .vision {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  /********* Nuestros Valores *********/
+  .nuestrosValores {
+    height: 100%;
+  }
+
+  .valores {
+    flex-direction: column;
+  }
+
+  .valoresDesc {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .mv {
+    height: 930px;
+  }
+}

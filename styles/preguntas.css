@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --color-text: #0a0a0a;
+  --color-principal: #ffff;
+  --color-secondary: #ff6b6b;
+  --color-lineY: #fce027;
+  --color-background: #ffff;
+  --color-footer: #ff6b6b;
+  --color-diagonal: #ff6b6b;
+  --color-rojo: #af1013;
+  --color-naranja: #ff8025;
+  --radius-line: 30px;
+  --width-line: 40%;
+  --height-line: 7px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand img {
+  width: 60px;
+}
+
+.active {
+  color: var(--color-rojo) !important;
+}
+
+/********************** Footer **********************/
+.footer_container {
+  background-color: var(--color-secondary);
+}
+
+.pDerechos {
+  color: #f2e5e5;
+}
+
+footer img {
+  widows: 30px;
+  height: 30px;
+}
+
+/********************** Titulo **********************/
+.titulo {
+  margin-top: 140px;
+  padding: 10px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+.linea {
+  background-color: var(--color-lineY);
+  height: 7px;
+  border-radius: 30px;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+/********************** Acordeon **********************/
+.preguntas {
+  padding: 40px;
+  border-radius: 40px;
+  background: #fefefe;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.acordeon {
+  width: 100%;
+  color: var(--color-text);
+  background-color: white;
+}
+
+.acordeon .contenedor {
+  position: relative;
+  margin: 10px 10px;
+}
+
+/* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+.acordeon .etiqueta {
+  position: relative;
+  padding: 10px 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+}
+
+/* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
+.acordeon .etiqueta::before {
+  content: "+";
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.acordeon .numero {
+  padding: 20px;
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--color-diagonal);
+}
+
+/* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+.acordeon .contenido {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: justify;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-left: 90px;
+}
+
+/* Añade una línea horizontal entre los contenidos */
+.acordeon hr {
+  width: 100;
+  border: 1px solid rgba(205, 214, 218);
+}
+
+/* Muestra la parte de contenido cuando está activa. Establece la altura */
+.acordeon .contenedor.activa .contenido {
+  height: 150px;
+}
+
+/* Cambia de signo positivo a negativo una vez activado */
+.acordeon .contenedor.activa .etiqueta::before {
+  content: "-";
+  font-size: 30px;
+}
+
+/********************** MediaQuery **********************/
+@media screen and (max-width: 991px) {
+  /********************** Titulo **********************/
+  .titulo {
+    margin-top: 140px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .linea {
+    background-color: var(--color-lineY);
+    height: 7px;
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

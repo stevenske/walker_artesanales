@@ -7,6 +7,7 @@
     --color-secondary: #FF6B6B;
     --color-lineY: #FCE027;
     --color-background: #ffff;
+    --color-red: #af1013;
     --color-footer: #FF6B6B;
     --color-diagonal: #FF6B6B;
     --radius-line: 30px;
@@ -31,6 +32,10 @@ html{
 .navbar-brand img{
 width: 60px;
 }
+.active {
+    color: var(--color-red) !important;
+}
+
 .nav-item a:hover {
     color: #AF1013 !important;
     border-color: #000;
