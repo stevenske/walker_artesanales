@@ -77,7 +77,7 @@
 
 .gallery-controls-previous{
     box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.25);
-    background-image: url(/assets/images/arrow-previous.png);
+    background-image: url(../assets/images/arrow-previous.png);
     content: '';
     display: inline-block;
     padding: 10px;
@@ -91,7 +91,7 @@
 .gallery-controls-next{
     box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.25);
     display: inline-block;
-    background-image: url(/assets/images/arrow-next.png);
+    background-image: url(../assets/images/arrow-next.png);
     width: 70px;
     height: 70px;
     background-repeat: no-repeat;
@@ -101,13 +101,13 @@
 }
 .gallery-controls-next:hover{
     background-color:  #AF1013 !important;
-    background-image: url(/assets/images/arrow-next-variant.png);
+    background-image: url(../assets/images/arrow-next-variant.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 .gallery-controls-previous:hover{
     background-color:  #AF1013 !important;
-    background-image: url(/assets/images/arrow-previous-variant.png);
+    background-image: url(../assets/images/arrow-previous-variant.png);
     background-repeat: no-repeat;
     background-position: center;
     
