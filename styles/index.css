@@ -215,7 +215,7 @@ html{
         height: 300px;
     }
     .smooth_scroll{
-        display: none;
+        display: none !important;
     }
     .form-submit{
     justify-content: center !important;
@@ -274,29 +274,24 @@ footer img{
     transform: scale(1.1);
     border-color: #000;
 }
-.smooth_scroll a{
+.smooth_scroll{
     position: fixed;
-    background-image: url(/assets/images/fix-top.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    top: 52%;
-    right: 1%;
-    width: 100px;
-    height: 100px;
-    transition: 200ms;
+    position: relative;
+    top: 50%;
+    left: 90%;
+    display: inline-block;
 }
 
-.smooth_scroll a:active{
-    background-image: url(/assets/images/fix-top-variant.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.smooth_scrollWhite{
+    display: none;
+    position: absolute;
+    right: 0%;
+    top: 8%;
+    z-index: 99;
 }
-.smooth_scroll a:hover{
-    background-image: url(/assets/images/fix-top-variant.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    top: 53%;
+.smooth_scroll:hover .smooth_scrollWhite {
+    display: inline;
+}
+.smooth_scroll:hover .smooth_scrollRed {
+    opacity: 0;
 }
