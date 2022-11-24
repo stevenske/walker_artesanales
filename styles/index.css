@@ -10,114 +10,134 @@
     --color-footer: #FF6B6B;
     --color-diagonal: #FF6B6B;
     --radius-line: 30px;
-    --width-line: 40%; 
-    --height-line: 7px; 
+    --width-line: 40%;
+    --height-line: 7px;
 }
-html{
-    scroll-behavior: smooth !important;
-}
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar-brand img{
+/********************** Navbar **********************/
+.navbar-brand img {
     width: 60px;
 }
+
 .nav-item a:hover {
     color: #AF1013 !important;
     border-color: #000;
 }
-.landing{
+
+/****************************************************/
+.landing {
     padding-top: 10rem;
     background-color: white;
 }
-.diagonal_back{
+
+.diagonal_back {
     padding-top: 10%;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to bottom right, #fff 50%,#FF6B6B 50%);
+    background-image: linear-gradient(to bottom right, #fff 50%, #FF6B6B 50%);
 }
-@media all and (max-width:768px){
-    .diagonal_back{
+
+@media all and (max-width:768px) {
+    .diagonal_back {
         height: 100%;
     }
 }
 
-.line-yellow{
+.line-yellow {
     background-color: var(--color-lineY) !important;
     height: 7px;
     border-radius: 30px;
     width: 40%;
 }
 
-@media all and (max-width:768px){
-    body{
+@media all and (max-width:768px) {
+    body {
         font-size: 0.7rem;
     }
-    .navbar{
+
+    .navbar {
         background-color: rgb(33 37 41) !important;
         border-bottom-right-radius: 10px 10px;
         border-bottom-left-radius: 10px 10px;
     }
-    .nav-item a{
+
+    .nav-item a {
         color: #fff !important;
     }
-    .landing{
-        display:flex !important;
+
+    .landing {
+        display: flex !important;
         flex-direction: column-reverse;
         padding-top: 6rem;
     }
-    .inf{
+
+    .inf {
         padding-bottom: 4rem;
     }
-    .inf p{
+
+    .inf p {
         padding-top: 1rem !important;
         padding-bottom: 1rem !important;
         padding-left: 1rem !important;
         padding-right: 1rem !important;
     }
-    .inf span img{
+
+    .inf span img {
         width: 7%;
     }
-    .contactUs_titleContainer{
+
+    .contactUs_titleContainer {
         margin: 0 0 0 0 !important;
         text-align: center;
     }
-    .form_networks{
+
+    .form_networks {
         display: none !important;
     }
-    .banner_food{
+
+    .banner_food {
         display: flex;
         justify-content: center
     }
-    .banner_food img{
-        width: 90%;;
+
+    .banner_food img {
+        width: 90%;
+        ;
     }
-    .contact{
+
+    .contact {
         display: none;
     }
-    .card_container{
+
+    .card_container {
         padding-top: 1rem !important;
         align-items: center;
         flex-direction: column;
     }
-    .card{
+
+    .card {
         width: 18rem !important;
         margin: 1rem 0 1rem 0;
     }
 }
-.text-bold{
+
+.text-bold {
     font-weight: 700;
 }
 
-.contact{
+.contact {
     width: 20%;
     box-shadow: 5px 5px black;
     transition: 200ms;
 }
-.contact a{
+
+.contact a {
     text-decoration: none;
     color: #AF1013;
     width: 100% !important;
@@ -125,14 +145,16 @@ html{
     display: block;
     transition: 300ms;
 }
-.contact:hover{
-    background-color:  #AF1013;
+
+.contact:hover {
+    background-color: #AF1013;
 }
-.contact a:hover{
+
+.contact a:hover {
     color: #fff !important;
 }
 
-.toProducts{
+.toProducts {
     background-color: var(--color-background);
     box-shadow: 5px 5px black;
     transition: 200ms;
@@ -142,7 +164,8 @@ html{
     z-index: 100;
     margin-bottom: 3rem;
 }
-.toProducts a{
+
+.toProducts a {
     text-decoration: none;
     color: #AF1013;
     width: 100% !important;
@@ -150,156 +173,199 @@ html{
     display: block;
     transition: 300ms;
 }
-.toProducts:hover{
-    background-color:  #AF1013;
+
+.toProducts:hover {
+    background-color: #AF1013;
 }
-.toProducts a:hover{
+
+.toProducts a:hover {
     color: #fff !important;
 }
-.card-body{
+
+.card-body {
     padding: 0 !important;
 }
 
-@media all and (max-width:768px){
+@media all and (max-width:768px) {
     .aboutUs_text_container p {
         font-size: 1rem !important;
     }
-    
-    .aboutUs_container{
+
+    .aboutUs_container {
         display: inline !important;
     }
-    .aboutUs_title{
+
+    .aboutUs_title {
         display: flex;
         justify-content: center;
     }
-    .aboutUs_title p{
+
+    .aboutUs_title p {
         margin: 1rem 0.5rem 0rem 0rem !important;
     }
-    .aboutUs_line{
+
+    .aboutUs_line {
         display: flex !important;
     }
-    .aboutUs_line .line-yellow{
+
+    .aboutUs_line .line-yellow {
         width: 80%;
         margin-left: 0rem !important;
     }
-    .toProducts_container{
+
+    .toProducts_container {
         display: flex;
         justify-content: center;
     }
+
     .toProducts {
-        position:initial !important;
+        position: initial !important;
         z-index: 100;
         width: 80%;
     }
-    .aboutUs_banner_container{
+
+    .aboutUs_banner_container {
         display: flex !important;
         justify-content: center !important;
     }
-    .aboutUs_banner_container img{
+
+    .aboutUs_banner_container img {
         width: 100%;
         background-size: cover;
     }
-    .form_container{
+
+    .form_container {
         width: 100% !important;
-        flex-direction:column ;
+        flex-direction: column;
         align-items: center;
         margin: 0rem 0rem 0rem 0rem !important;
         border-radius: 25px 25px 0px 0px !important;
     }
-    .inf{
+
+    .inf {
         border-radius: 25px 25px 0px 0px !important;
         width: 100% !important;
     }
-    .w-50{
+
+    .w-50 {
         width: 100% !important;
     }
+
     .form_subtitle {
         margin: 0rem 0rem 0rem 0.5rem !important;
     }
-    .form-control{
+
+    .form-control {
         width: 90vw;
     }
-    textarea{
+
+    textarea {
         width: 90%;
         height: 300px;
     }
-    .smooth_scroll{
+
+    .smooth_scroll {
         display: none !important;
     }
-    .form-submit{
-    justify-content: center !important;
+
+    .form-submit {
+        justify-content: center !important;
     }
-    .footer_container{
+
+    .footer_container {
         justify-content: center !important;
         display: block !important;
     }
-    .footer_networks{
+
+    .footer_networks {
         display: flex;
         flex-direction: row !important;
     }
-    .footer_networks a{
+
+    .footer_networks a {
         padding-top: 0rem !important;
-        padding-bottom:0rem !important;
+        padding-bottom: 0rem !important;
         padding-left: 2rem;
     }
 }
-.inf{
-    background-color:  var( --color-secondary);
+
+.inf {
+    background-color: var(--color-secondary);
 }
-.w-80{
+
+.w-80 {
     width: 80%;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
 }
-.ml-9{
+
+.ml-9 {
     margin-left: 12rem;
 }
-.shadow{
-    box-shadow:   2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+.shadow {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-textarea{
+
+textarea {
     border: none;
     overflow: auto;
     resize: none;
 }
-.form-submit button{
+
+.form-submit button {
     transition: 300ms;
     color: #AF1013;
 }
-.form-submit button:hover{
-background-color: #AF1013;
-color: white;
+
+.form-submit button:hover {
+    background-color: #AF1013;
+    color: white;
 }
-footer{
+
+footer {
     background-color: var(--color-secondary);
 }
-footer img{
+
+footer img {
     widows: 30px;
     height: 30px;
 }
+
 .zoom {
     transition: 300ms;
 }
+
 .zoom:hover {
     transform: scale(1.1);
     border-color: #000;
 }
-.smooth_scroll{
+
+/********************** SmoothScroll **********************/
+html {
+    scroll-behavior: smooth !important;
+}
+
+.smooth_scroll {
     position: fixed;
     top: 50%;
     left: 90%;
     display: inline-block;
 }
 
-.smooth_scrollWhite{
+.smooth_scrollWhite {
     display: none;
     position: absolute;
     right: 0%;
     top: 8%;
     z-index: 99;
 }
+
 .smooth_scroll:hover .smooth_scrollWhite {
     display: inline;
 }
+
 .smooth_scroll:hover .smooth_scrollRed {
     opacity: 0;
 }
+
+/**********************************************************/

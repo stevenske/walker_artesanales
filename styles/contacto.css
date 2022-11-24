@@ -29,8 +29,9 @@ html{
         background-image: none;
     }
 }
-.navbar-brand img{
-width: 60px;
+/********************** Navbar **********************/
+.navbar-brand img {
+    width: 60px;
 }
 .active {
     color: var(--color-red) !important;

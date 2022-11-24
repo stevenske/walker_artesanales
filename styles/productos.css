@@ -21,6 +21,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/********************** Navbar **********************/
 .navbar-brand img {
   width: 60px;
 }
@@ -30,7 +31,7 @@
 }
 
 /********************** Footer **********************/
-.footer_container {
+footer{
   background-color: var(--color-secondary);
 }
 
@@ -43,6 +44,13 @@ footer img {
   height: 30px;
 }
 
+.zoom {
+  transition: 300ms;
+}
+.zoom:hover {
+  transform: scale(1.1);
+  border-color: #000;
+}
 /********************** Titulo **********************/
 .titulo {
   margin-top: 140px;
@@ -179,6 +187,18 @@ footer img {
 }
 
 @media screen and (max-width: 991px) {
+  .smooth_scroll{
+    display: none !important;
+}
+  /********************** Navbar **********************/
+  .navbar{
+    background-color: rgb(33 37 41) !important;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+  }
+  .nav-item a{
+    color: #fff !important;
+  }
   /********************** Titulo **********************/
   .titulo {
     margin-top: 140px;
@@ -208,6 +228,7 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
+
   .imagen-producto {
     margin: 0 auto;
     width: 300px;
@@ -313,3 +334,30 @@ footer img {
 .fadeIn-right {
   left: 80%;
 }
+/********************** SmoothScroll **********************/
+html{
+  scroll-behavior: smooth !important;
+}
+.smooth_scroll{
+  position: fixed;
+  top: 50%;
+  left: 90%;
+  display: inline-block;
+}
+
+.smooth_scrollWhite{
+  display: none;
+  position: absolute;
+  right: 0%;
+  top: 8%;
+  z-index: 99;
+}
+
+.smooth_scroll:hover .smooth_scrollWhite {
+  display: inline;
+}
+
+.smooth_scroll:hover .smooth_scrollRed {
+  opacity: 0;
+}
+/**********************************************************/
