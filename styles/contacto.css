@@ -30,10 +30,17 @@ html{
 @media all and (max-width:768px){
     .diagonal_back{
         height: 100%;
+        background-image: none;
     }
 }
 .navbar-brand img{
 width: 60px;
+}
+.line-yellow{
+    background-color: var(--color-lineY) !important;
+    height: 7px;
+    border-radius: 30px;
+    width: 40%;
 }
 
 .line-yellow{
@@ -41,6 +48,7 @@ width: 60px;
     height: 7px;
     border-radius: 30px;
     width: 30%;
+    display: none;
 }
 .contactUs_container_inf{
     width: 50% !important;
@@ -49,7 +57,6 @@ width: 60px;
     margin-top: 10%;
 }
 .form_container{
-    height: 800px;
     position: relative;
 }
 
@@ -60,23 +67,45 @@ width: 60px;
     .inf{
         background-color:  var( --color-secondary);
     }
-@media all and (max-width:768px){   
+@media all and (max-width:768px){
+    body{
+        font-size: 0.7rem;
+    }
+    .navbar{
+        background-color: rgb(33 37 41) !important;
+        border-bottom-right-radius: 10px 10px;
+        border-bottom-left-radius: 10px 10px;
+    }
+    .nav-item a{
+        color: #fff !important;
+    }
+    .line-yellow{
+        display: block;
+        
+    }
+    .contactUs_titleResponsive{
+        padding-top: 4rem;
+        display: block !important;
+    }
+    .contactUs_title{
+        display: none;
+    }
+    .contactUs_infResponsiveContainer{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .contactUs_infResponsive{
+        display: flex !important;
+        width: 50%;
+        justify-content: center !important;
+        
+    }
     .form_container{
         width: 100% !important;
         flex-direction:column ;
         align-items: center;
         margin: 0rem 0rem 0rem 0rem !important;
         border-radius: 25px 25px 0px 0px !important;
-    }
-    .inf{
-        border-radius: 25px 25px 0px 0px !important;
-        width: 100% !important;
-    }
-    .inf p{
-        padding: 2rem 0rem 4rem 0rem !important;
-    }
-    .form_networks{
-        display: none;
     }
     .w-50{
         width: 100% !important;
@@ -91,10 +120,46 @@ width: 60px;
         justify-content: center !important;
         display: block !important;
     }
+    .form-control{
+        width: 90vw;
+    }
+    textarea{
+        width: 90%;
+        height: 300px;
+    }
+    .w-50{
+        width: 100% !important;
+    }
+    .inf{
+        padding-bottom: 4rem;
+        border-radius: 25px 25px 0px 0px !important;
+        width: 100% !important;
+    }
+    .inf p{
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .inf span img{
+        width: 7%;
+    }
+    .contactUs_titleContainer{
+        margin: 0 0 0 0 !important;
+        text-align: center;
+    }
+    .form_networks{
+        display: none !important;
+    }
+
     .footer_networks{
-        padding: 0rem 3rem 0rem 8rem !important;
-        display: block !important;
+        display: flex;
         flex-direction: row !important;
+    }
+    .footer_networks a{
+        padding-top: 0rem !important;
+        padding-bottom:0rem !important;
+        padding-left: 2rem;
     }
 }
 .form_networks{
@@ -144,3 +209,13 @@ footer img{
 .ml-9{
     margin-left: 12rem;
 }
+
+.form-submit button{
+    transition: 300ms;
+    color: #AF1013;
+}
+.form-submit button:hover{
+background-color: #AF1013;
+color: white;
+}
+

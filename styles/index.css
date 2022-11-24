@@ -54,6 +54,8 @@ width: 60px;
     }
     .navbar{
         background-color: rgb(33 37 41) !important;
+        border-bottom-right-radius: 10px 10px;
+        border-bottom-left-radius: 10px 10px;
     }
     .nav-item a{
         color: #fff !important;

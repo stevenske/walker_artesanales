@@ -17,8 +17,11 @@
     <header id="scroll-up">
         <nav class="navbar d-flex justify-content-between navbar-expand-lg bg-light fs-5 fixed-top">
             <div class="container-fluid align-items-center">
-                <a class="navbar-brand d-flex mx-5" href="../../index.html">
-                    <img src="../../assets/images/Logo_Walker_artesanales.png" alt="">
+                <a href="../../index.html">
+                    <picture class="navbar-brand d-flex mx-5">
+                        <source srcset="../../assets/images/logo_walker_artesanales_responsive.png" media="(max-width: 768px)">
+                        <img src="../../assets/images/Logo_Walker_artesanales.png" alt="">
+                    </picture>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -26,18 +29,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav d-flex justify-content-evenly">
+                    <ul class="navbar-nav d-flex justify-content-evenly text-center">
                         <li class="nav-item">
                             <a class="nav-link active mx-5" aria-current="page" href="#">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active mx-5" aria-current="page" href="#">Productos</a>
+                            <a class="nav-link active mx-5" aria-current="page" href="./pages/productos">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active mx-5" aria-current="page" href="#">Preguntas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active mx-5" aria-current="page" href="./contacto.html">Contacto</a>
+                            <a class="nav-link active mx-5" aria-current="page"
+                                href="./pages/contacto/contacto.html">Contacto</a>
                         </li>
 
                     </ul>
@@ -47,46 +51,45 @@
     </header>
     <div class="diagonal_back position-relative">
         <div class="contactUs_container my-5" id="scroll-form">
-            <div class="ml-9 mt-5">
-                <p class="fs-1 fw-bold mb-0">CONTACTO</p>
-                <div class="line-yellow"></div>
-                <p class="fs-5 mb-0 contactUs_container_inf">Rellena el formulario, estaremos respondiendo lo antes
-                    posible. También puedes contactarnos vía redes sociales, correo electronico y télefono.</p>
+            <div class="ml-9 mt-5 contactUs_titleContainer">
+                <p class="d-none fs-1 fw-bold contactUs_titleResponsive">Contacto</p>
+                <div class="line-yellow mx-auto"></div>
+                <p class="fs-1 fw-bold mb-0 contactUs_title">Ponte en contacto con nosotros</p>
+                <p class=" contactUs_title">Rellena el formulario. Estaremos respondiendo lo antes posible.</p>
+                <div class=" contactUs_infResponsiveContainer">
+                    <p class="d-none contactUs_infResponsive">Rellena el formulario, estaremos respondiendo lo antes posible. También puedes contactarnos vía redes sociales, correo electronico y télefono.</p>
+                </div>
             </div>
             <div class="form_container mt-3 rounded-start rounded-end w-80 mx-auto d-flex">
                 <div class="w-50 inf rounded-start">
-                    <h3 class="fs-1 py-3 text-center">Información de contacto</h3>
-                    <p class="ps-5 ms-4 py-5"><span class="ms-5 me-3"><img src="../../assets/images/location.svg"
-                                alt=""></span>Julio
+                    <h3 class="fs-3 py-3 text-center">Información de contacto</h3>
+                    <p class="ps-5 py-5"><span class="ms-5 me-3"><img src="../../assets/images/location.svg" alt=""></span>Julio
                         de Vedia 3760 Bo Patricios Córdoba 5000</p>
-                    <p class="ps-5 ms-4 py-5"><span> <img class="ms-5 me-3" src="../../assets/images/email.svg"
+                    <p class="ps-5 py-5"><span> <img class="ms-5 me-3" src="../../assets/images/email.svg"
                                 alt=""></span>walkerartesanales.cba@gmail.com</p>
-                    <p class="ps-5 ms-4 mb-0 py-5"><span> <img class="ms-5 me-3" src="../../assets/images/phone.svg"
+                    <p class="ps-5 mb-0 py-5"><span> <img class="ms-5 me-3" src="../../assets/images/phone.svg"
                                 alt=""></span>3517660002 / 3517432761</p>
-                    <div class="form_networks d-flex ms-5">
-                        <a class="mx-1 my-auto zoom" href="https://www.twitter.com" target="_blank"><img
-                                src="../../assets/images/twitter.png" alt=""></a>
+                    <div class="form_networks d-flex ms-5 pt-5 mt-5">
                         <a class="mx-1 my-auto zoom" href="https://www.instagram.com" target="_blank"><img
                                 src="../../assets/images/instagram.svg" alt=""></a>
                         <a class="mx-1 my-auto zoom" href="https://www.facebook.com" target="_blank"><img
                                 src="../../assets/images/facebook.svg" alt=""></a>
                     </div>
                 </div>
-                <form class="w-50 rounded-end form" id="form">
+    
+                <form class="w-50 rounded-end bg-light" id="form">
                     <div class="form_title_container">
-                        <p class="form_title fs-1 pt-3 ms-5 mb-0">Envianos un mensaje.</p>
+                        <p class="form_title fs-3 pt-3 ms-5 mb-0">Envianos un mensaje.</p>
                         <p class="form_subtitle fs-5 ms-5 mt-0">Pronto nos pondremos en contacto.</p>
                     </div>
                     <div class="form-group d-flex justify-content-center py-2">
                         <div class="col-md-10 shadow">
-                            <input class="form-control" placeholder="Nombre" type="text" name="from_name" id="from_name"
-                                required>
+                            <input class="form-control" placeholder="Nombre" type="text" name="from_name" id="from_name" required>
                         </div>
                     </div>
                     <div class="form-group d-flex justify-content-center py-2">
                         <div class="col-md-10 shadow">
-                            <input class="form-control" placeholder="E-mail" type="text" name="email_id" id="email_id"
-                                required>
+                            <input  class="form-control"  placeholder="E-mail" type="text" name="email_id" id="email_id" required>
                         </div>
                     </div>
                     <div class="form-group d-flex justify-content-center py-2">
@@ -97,9 +100,9 @@
                     </div>
                     <div class="form-group d-flex justify-content-center py-2">
                         <div class="col-md-10 position-relative shadow">
-                            <span class="position-absolute end-0 me-4 my-2"><img src="../../assets/images/dropdown.png"
+                            <span class="position-absolute end-0 me-4 my-2"><img src="./assets/images/dropdown.png"
                                     alt=""></span>
-                            <select class="form-control text-muted" type="text" name="motive" id="motive">
+                            <select class="form-control text-muted"  type="text" name="motive" id="motive">
                                 <option>Seleccionar un motivo</option>
                                 <option>Compra Mayorista</option>
                                 <option>Compra Minorista</option>
@@ -108,13 +111,13 @@
                         </div>
                     </div>
                     <div class="form-group d-flex justify-content-center py-2">
-                        <textarea class="col-md-10 shadow pt-3 px-3 rounded" rows="10" type="text" name="message"
-                            id="message" placeholder="Mensaje..."></textarea>
+                        <textarea class="col-md-10 shadow pt-3 px-3 rounded" rows="10" type="text" name="message" id="message"
+                            placeholder="Mensaje..."></textarea>
                     </div>
-                    <div class="form-submit d-flex justify-content-end mx-5 pt-8 my-3">
+                    <div class="form-submit d-flex justify-content-end mx-5 my-3">
                         <button class="btn btn-white border-danger mx-3" id="button" value="Send Email" type="submit">
-                            <div class="alt-send-button">
-                                <i class="fa fa-paper-plane"></i><span class="send-text">Enviar</span>
+                            <div class="send-button">
+                                <span class="send-text">Enviar</span>
                             </div>
                         </button>
                     </div>
@@ -133,16 +136,14 @@
                             class="me-3">walkerartesanales.cba@gmail.com</span></p>
             </div>
             <div class="footer_networks col-md-6 d-flex align-items-end flex-column justify-content-center pe-5 py-2">
-                <a class="mb-3 zoom" href="https://www.twitter.com" target="_blank"><img
-                        src="../../assets/images/twitter.png" alt=""></a>
-                <a class="mb-3 zoom" href="https://www.instagram.com" target="_blank"><img
+                <a class="pb-4 zoom" href="https://www.instagram.com" target="_blank"><img
                         src="../../assets/images/instagram.svg" alt=""></a>
-                <a class="mb-3 zoom" href="https://www.facebook.com" target="_blank"><img
+                <a class="pt-4 zoom" href="https://www.facebook.com" target="_blank"><img
                         src="../../assets/images/facebook.svg" alt=""></a>
             </div>
         </div>
         <div class="border-top border-dark d-flex justify-content-center align-items-end ">
-            <p class="py-4 text-white">Todos los derechos reservados © Home Walker</p>
+            <p class="py-4">Todos los derechos reservados © Home Walker</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
