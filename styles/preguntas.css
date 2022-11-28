@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
   --color-text: #0a0a0a;
@@ -18,9 +18,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-
 
 /********************** Navbar **********************/
 .navbar-brand img {
@@ -31,9 +30,8 @@
   color: var(--color-rojo) !important;
 }
 
-
 /********************** Footer **********************/
-footer{
+footer {
   background-color: var(--color-secondary);
 }
 
@@ -107,7 +105,7 @@ footer img {
 
 /* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
 .acordeon .etiqueta::before {
-  content: "+";
+  content: '+';
   color: black;
   position: absolute;
   top: 50%;
@@ -150,25 +148,25 @@ footer img {
 
 /* Cambia de signo positivo a negativo una vez activado */
 .acordeon .contenedor.activa .etiqueta::before {
-  content: "-";
+  content: '-';
   font-size: 30px;
 }
 
 /********************** MediaQuery **********************/
 @media screen and (max-width: 991px) {
   /********************** Titulo **********************/
-  .smooth_scroll{
+  .smooth_scroll {
     display: none !important;
-}
-  .navbar{
+  }
+  .navbar {
     background-color: rgb(33 37 41) !important;
     border-bottom-right-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
-  .nav-item a{
+  .nav-item a {
     color: #fff !important;
   }
-  
+
   .titulo {
     margin-top: 140px;
     padding: 10px;
@@ -182,19 +180,39 @@ footer img {
     width: 100%;
     margin-bottom: 20px;
   }
+
+  .preguntas {
+    padding: 20px;
+  }
+
+  .acordeon .numero {
+    padding-left: 0;
+  }
+
+  .acordeon .contenedor.activa .contenido {
+    height: 200px;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  .acordeon .contenedor.activa .contenido {
+    height: 100%;
+    padding-left: 0;
+  }
+}
+
 /********************** SmoothScroll **********************/
-html{
+html {
   scroll-behavior: smooth !important;
 }
-.smooth_scroll{
+.smooth_scroll {
   position: fixed;
   top: 50%;
   left: 90%;
   display: inline-block;
 }
 
-.smooth_scrollWhite{
+.smooth_scrollWhite {
   display: none;
   position: absolute;
   right: 0%;

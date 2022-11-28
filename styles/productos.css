@@ -31,7 +31,7 @@
 }
 
 /********************** Footer **********************/
-footer{
+footer {
   background-color: var(--color-secondary);
 }
 
@@ -113,7 +113,7 @@ footer img {
   color: black;
   position: absolute;
   top: 60%;
-  right: 60px;
+  right: 15px;
   font-size: 50px;
   font-weight: 300;
   transform: translateY(-50%);
@@ -187,16 +187,16 @@ footer img {
 }
 
 @media screen and (max-width: 991px) {
-  .smooth_scroll{
+  .smooth_scroll {
     display: none !important;
-}
+  }
   /********************** Navbar **********************/
-  .navbar{
+  .navbar {
     background-color: rgb(33 37 41) !important;
     border-bottom-right-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
-  .nav-item a{
+  .nav-item a {
     color: #fff !important;
   }
   /********************** Titulo **********************/
@@ -228,6 +228,9 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
+  .preguntas {
+    padding: 5px;
+  }
 
   .imagen-producto {
     margin: 0 auto;
@@ -236,11 +239,22 @@ footer img {
   }
 
   .acordeon .contenedor.activa .contenido {
-    height: 1500px;
+    /* height: 2600px; */
+    height: 100%;
   }
 
   .acordeon .contenedor.activa .contenidoCatalogo {
-    height: 4800px;
+    /* height: 7200px; */
+    height: 100%;
+  }
+
+  .imagen-producto {
+    width: 95%;
+  }
+
+  .acordeon .contenido,
+  .contenidoCatalogo {
+    padding-left: 45px;
   }
 }
 
@@ -335,17 +349,17 @@ footer img {
   left: 80%;
 }
 /********************** SmoothScroll **********************/
-html{
+html {
   scroll-behavior: smooth !important;
 }
-.smooth_scroll{
+.smooth_scroll {
   position: fixed;
   top: 50%;
   left: 90%;
   display: inline-block;
 }
 
-.smooth_scrollWhite{
+.smooth_scrollWhite {
   display: none;
   position: absolute;
   right: 0%;

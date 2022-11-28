@@ -47,7 +47,7 @@
 }
 
 /********************** Footer **********************/
-footer{
+footer {
   background-color: var(--color-secondary);
 }
 
@@ -72,7 +72,7 @@ footer img {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -81,6 +81,7 @@ footer img {
 .descripcion {
   width: 50%;
   padding-right: 40px;
+  padding-left: 30px;
 }
 
 .descripcion h2 {
@@ -92,33 +93,35 @@ footer img {
 
 .linea {
   background-color: var(--color-rojo);
-  height: 7px;
+  height: 9px;
   border-radius: 30px;
-  width: 70%;
+  width: 60%;
   margin-bottom: 20px;
 }
 
 .descripcion p {
   padding-top: 30px;
   font-weight: 400;
+  font-size: 25px;
   line-height: 40px;
 }
 
 .imagen img {
-  width: 600px;
+  width: 100%;
+  padding-right: 30px;
 }
 /********************** SmoothScroll **********************/
-html{
+html {
   scroll-behavior: smooth !important;
 }
-.smooth_scroll{
+.smooth_scroll {
   position: fixed;
   top: 50%;
   left: 90%;
   display: inline-block;
 }
 
-.smooth_scrollWhite{
+.smooth_scrollWhite {
   display: none;
   position: absolute;
   right: 0%;
@@ -140,19 +143,21 @@ html{
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 50px;
 }
 
 .imagenExpand img {
-  width: 600px;
+  width: 100%;
+  padding-left: 30px;
 }
 
 .descExpand {
   width: 50%;
   padding-left: 40px;
+  padding-right: 30px;
 }
 
 .descExpand h2 {
@@ -160,21 +165,23 @@ html{
   font-size: 58px;
   font-weight: 700;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .lineaExpand {
-  margin: 0 auto;
+  float: right;
   background-color: var(--color-lineY);
-  height: 7px;
+  height: 9px;
   border-radius: 30px;
-  width: 70%;
+  width: 75%;
   margin-bottom: 20px;
 }
 
 .expansion p {
   padding-top: 30px;
   font-weight: 400;
-  line-height: 40px;
+  font-size: 25px;
+  line-height: 50px;
 }
 
 /********************** Mision - Vision **********************/
@@ -245,20 +252,21 @@ html{
 
 .tituloValores {
   margin-top: 80px;
+  padding: 25px;
   font-weight: 700;
   font-size: 58px;
 }
 
 .valores {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 50px;
   width: 100%;
 }
 
 .valoresDesc {
-  width: 40%;
-  padding: 30px;
+  width: 25%;
+  padding: 25px;
 }
 
 .valoresDesc h3 {
@@ -268,7 +276,7 @@ html{
 
 .valoresDesc p {
   line-height: 40px;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .tituloIn {
@@ -335,16 +343,13 @@ html{
   }
 
   .descripcion p {
+    font-size: 20px;
     padding-right: 20px;
-  }
-
-  .imagen img {
-    width: 500px;
   }
 
   /********** Expansion **********/
   .imagenExpand img {
-    width: 500px;
+    width: 100%;
   }
 
   .descExpand {
@@ -352,11 +357,18 @@ html{
   }
 
   .descExpand p {
+    font-size: 20px;
     padding-left: 20px;
   }
 
   .descExpand h2 {
     font-size: 50px;
+  }
+
+  /********** Nuestros valores **********/
+
+  .valoresDesc {
+    padding: 5px;
   }
 }
 
@@ -376,6 +388,7 @@ html{
 
   /********** Expansion **********/
   .descExpand p {
+    margin-top: 10px;
     padding: 5px;
   }
 
@@ -383,8 +396,8 @@ html{
     font-size: 40px;
   }
 
-  .imagenExpand img {
-    width: 440px;
+  .lineaExpand {
+    margin: 0;
   }
 
   /********* Mision - Vision *********/
@@ -411,22 +424,30 @@ html{
 
   .valores {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+  }
+
+  .valoresDesc h3 {
+    font-size: 30px;
+  }
+
+  .valoresDesc p {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .smooth_scroll{
+  .smooth_scroll {
     display: none !important;
-}
-  .navbar{
+  }
+  .navbar {
     background-color: rgb(33 37 41) !important;
     border-bottom-right-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
 
-  .nav-item a{
+  .nav-item a {
     color: #fff !important;
   }
 
@@ -436,16 +457,13 @@ html{
 
   .descripcion {
     margin: 0 auto;
+    padding: 20px;
     width: 100%;
   }
 
-  .descripcion h2 {
-    text-align: center;
-  }
-
   .linea {
-    width: 50%;
-    margin: 0 auto;
+    width: 40%;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 
@@ -456,6 +474,7 @@ html{
 
   .imagen img {
     width: 100%;
+    padding: 0;
   }
 
   .expansion {
@@ -464,22 +483,23 @@ html{
 
   .imagenExpand img {
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .descExpand {
     width: 100%;
-    padding-left: 0;
-  }
-
-  .descExpand h2 {
-    text-align: center;
+    padding: 20px;
   }
 
   .lineaExpand {
-    padding: 0;
-    width: 50%;
+    float: left;
+    width: 40%;
     margin: 0 auto;
-    margin-bottom: 20px;
+  }
+
+  .descExpand h2 {
+    text-align: left;
   }
 
   .descExpand p {
@@ -489,7 +509,7 @@ html{
 
   /********* Mision - Vision *********/
   .mv {
-    height: 800px;
+    height: 930px;
   }
 
   .mv-desc {
@@ -524,13 +544,22 @@ html{
   }
 
   .valoresDesc {
-    padding: 0;
+    padding: 25px;
     margin-bottom: 30px;
+    width: 70%;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 520px) {
   .mv {
-    height: 930px;
+    height: 1200px;
+  }
+
+  .vision {
+    padding: 5px;
+  }
+
+  .mision {
+    padding: 5px;
   }
 }
