@@ -21,7 +21,7 @@ class Carousel {
         });
     }
     setCurrentState(direction) {
-        if (direction.className == "gallery-contros-previous") {
+        if (direction.className == "gallery-controls-previous") {
             this.carouselArray.unshift(this.carouselArray.pop());
         } else {
             this.carouselArray.push(this.carouselArray.shift());
