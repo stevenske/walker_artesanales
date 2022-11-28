@@ -31,7 +31,7 @@ html{
 }
 /********************** Navbar **********************/
 .navbar-brand img {
-    width: 60px;
+    width: 90px;
 }
 .active {
     color: var(--color-red) !important;

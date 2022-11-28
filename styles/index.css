@@ -302,16 +302,14 @@
 }
 
 .contact {
-    width: 20%;
     box-shadow: 5px 5px black;
     transition: 200ms;
+    width: 50% !important;
 }
 
 .contact a {
     text-decoration: none;
     color: #AF1013;
-    width: 100% !important;
-    height: 100% !important;
     display: block;
     transition: 300ms;
 }
