@@ -22,7 +22,7 @@
 
 /********************** Navbar **********************/
 .navbar-brand img {
-    width: 60px;
+    width: 90px;
 }
 
 .nav-item a:hover {
@@ -56,6 +56,69 @@
     width: 40%;
 }
 
+/********************** Responsive 1200px **********************/
+@media all and (max-width:1200px) {
+    .contact {
+        width: 10rem !important;
+    }
+
+    .aboutUs_banner_container {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .aboutUs_text_container p {
+        font-size: 1rem !important;
+    }
+
+    .aboutUs_banner_container img {
+        height: 100%;
+        background-size: cover;
+    }
+
+    .card {
+        width: 18rem !important;
+        margin: 1rem 0 1rem 0;
+    }
+}
+
+/***************************************************************/
+
+/********************** Responsive 1000px **********************/
+@media all and (max-width:1000px) {
+    .gallery-container {
+        width: 50% !important;
+    }
+
+    .gallery-item {
+        width: 15rem !important;
+        height: 15rem !important;
+    }
+
+    .card {
+        width: 13rem !important;
+        margin: 1rem 0 1rem 0;
+    }
+    
+    .smooth_scroll {
+        display: none !important;
+    }
+    
+    .aboutUs_banner_container img {
+        height: 500px;
+        background-size: cover;
+    }
+    .aboutUs_text_container{
+        margin-top: 1rem !important;    
+    }
+    .aboutUs_text_container p {
+        font-size: 0.8rem !important;
+
+    }
+}
+
+/**************************************************************/
+/********************** Responsive 768px **********************/
 @media all and (max-width:768px) {
     body {
         font-size: 0.7rem;
@@ -122,71 +185,10 @@
     }
 
     .card {
-        width: 18rem !important;
+        width: 20rem !important;
         margin: 1rem 0 1rem 0;
     }
-}
 
-.text-bold {
-    font-weight: 700;
-}
-
-.contact {
-    width: 20%;
-    box-shadow: 5px 5px black;
-    transition: 200ms;
-}
-
-.contact a {
-    text-decoration: none;
-    color: #AF1013;
-    width: 100% !important;
-    height: 100% !important;
-    display: block;
-    transition: 300ms;
-}
-
-.contact:hover {
-    background-color: #AF1013;
-}
-
-.contact a:hover {
-    color: #fff !important;
-}
-
-.toProducts {
-    background-color: var(--color-background);
-    box-shadow: 5px 5px black;
-    transition: 200ms;
-    right: 17%;
-    position: absolute;
-    bottom: 0%;
-    z-index: 100;
-    margin-bottom: 3rem;
-}
-
-.toProducts a {
-    text-decoration: none;
-    color: #AF1013;
-    width: 100% !important;
-    height: 100% !important;
-    display: block;
-    transition: 300ms;
-}
-
-.toProducts:hover {
-    background-color: #AF1013;
-}
-
-.toProducts a:hover {
-    color: #fff !important;
-}
-
-.card-body {
-    padding: 0 !important;
-}
-
-@media all and (max-width:768px) {
     .aboutUs_text_container p {
         font-size: 1rem !important;
     }
@@ -287,6 +289,71 @@
         padding-bottom: 0rem !important;
         padding-left: 2rem;
     }
+    .gallery-container {
+        width: 100% !important;
+    }
+
+}
+
+/***************************************************************/
+
+.text-bold {
+    font-weight: 700;
+}
+
+.contact {
+    width: 20%;
+    box-shadow: 5px 5px black;
+    transition: 200ms;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #AF1013;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    transition: 300ms;
+}
+
+.contact:hover {
+    background-color: #AF1013;
+}
+
+.contact a:hover {
+    color: #fff !important;
+}
+
+.toProducts {
+    background-color: var(--color-background);
+    box-shadow: 5px 5px black;
+    transition: 200ms;
+    right: 17%;
+    position: absolute;
+    bottom: 0%;
+    z-index: 100;
+    margin-bottom: 3rem;
+}
+
+.toProducts a {
+    text-decoration: none;
+    color: #AF1013;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    transition: 300ms;
+}
+
+.toProducts:hover {
+    background-color: #AF1013;
+}
+
+.toProducts a:hover {
+    color: #fff !important;
+}
+
+.card-body {
+    padding: 0 !important;
 }
 
 .inf {
