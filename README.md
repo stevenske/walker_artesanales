@@ -1,4 +1,4 @@
-![Animation](https://media.giphy.com/media/Q5RUtrsuDA4ZKj9b0F/giphy.gif)
+![Animation](https://media.giphy.com/media/RuY55bRuBx644r826c/giphy.gif)
 
 # Walker Artesanales
     website of a distributor of innovative handmade products.
