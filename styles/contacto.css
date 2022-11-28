@@ -69,23 +69,29 @@ html{
 .form_container{
     position: relative;
 }
-
-.form{
-    background-color: #fff !important;
-    z-index: 100;
-    }
-    .inf{
-        background-color:  var( --color-secondary);
-    }
-@media all and (max-width:768px){
-    body{
-        font-size: 0.7rem;
-    }
+/********************** Responsive 991px **********************/
+@media all and (max-width:991px){
     .navbar{
         background-color: rgb(33 37 41) !important;
         border-bottom-right-radius: 10px 10px;
         border-bottom-left-radius: 10px 10px;
     }
+}
+
+.form{
+    background-color: #fff !important;
+    z-index: 100;
+}
+.inf{
+    background-color:  var( --color-secondary);
+}
+
+/********************** Responsive 768px **********************/
+@media all and (max-width:768px){
+    body{
+        font-size: 0.7rem;
+    }
+
     .nav-item a{
         color: #fff !important;
     }
