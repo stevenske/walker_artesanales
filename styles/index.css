@@ -57,7 +57,7 @@
 }
 
 /********************** Responsive 1200px **********************/
-@media all and (max-width:1200px) {
+@media all and (max-width:1400px) {
     .contact {
         width: 10rem !important;
     }
@@ -79,6 +79,11 @@
     .card {
         width: 18rem !important;
         margin: 1rem 0 1rem 0;
+    }
+
+    .gallery-item {
+        width: 15rem !important;
+        height: 15rem !important;
     }
 }
 
