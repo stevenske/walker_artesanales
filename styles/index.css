@@ -89,8 +89,14 @@
 
 /***************************************************************/
 
-/********************** Responsive 1000px **********************/
-@media all and (max-width:1000px) {
+/********************** Responsive 991px **********************/
+@media all and (max-width:991px) {
+    .navbar {
+        background-color: rgb(33 37 41) !important;
+        border-bottom-right-radius: 10px 10px;
+        border-bottom-left-radius: 10px 10px;
+    }
+
     .gallery-container {
         width: 50% !important;
     }
@@ -127,12 +133,6 @@
 @media all and (max-width:768px) {
     body {
         font-size: 0.7rem;
-    }
-
-    .navbar {
-        background-color: rgb(33 37 41) !important;
-        border-bottom-right-radius: 10px 10px;
-        border-bottom-left-radius: 10px 10px;
     }
 
     .nav-item a {
